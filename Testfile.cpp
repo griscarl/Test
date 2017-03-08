@@ -1,11 +1,12 @@
+// In C++, local variables can be created at any position in the code.
+// Defining local variables when they are needed tends to produce more readable code than defining them at the beginning of a function.
+
 #include <iostream>
 using namespace std;
- 
+
 int main() {
-	int x, y;
-	cout << "Please enter 2 numbers: ";
-	cin >> x >> y;
-	cout << x << "+" << y << "=" << x+y << endl;
-	cin.get();
-	return 0;
+	for (int i=0; i<5; i++)
+	//	printf("\n", i);
+		cout << "This is the current 'i': "<< i << endl;
+	return (0); 
 }
